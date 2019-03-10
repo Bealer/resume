@@ -32,7 +32,7 @@ Graduation: Spring 2021
 **Projects**
 ------------------
 Reporting platform for a non-profit organization, reduced time spent on reporting by 85%
-[link] (https://drive.google.com/open?id=1TWIJuGqvWCvRDNcdrGcfyg9Hj8_9o82-)
+[link](https://drive.google.com/open?id=1TWIJuGqvWCvRDNcdrGcfyg9Hj8_9o82-)
 Class Projects (Listed under Hard Skills)
 [link](https://www.dropbox.com/sh/5jyym06hculjlby/AABtC-BgF0vGPy8VAn6Q7NVNa?dl=0)
 
