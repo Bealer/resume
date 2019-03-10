@@ -1,8 +1,8 @@
 **Ian Beal**
 ================
-(801) 663-4341
-Ian.b255@gmail.com
-www.linkedin.com/in/ian-beal
+(801) 663-4341   
+Ian.b255@gmail.com   
+www.linkedin.com/in/ian-beal   
 
 *****************************************
 
