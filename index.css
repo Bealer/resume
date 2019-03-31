@@ -1,0 +1,61 @@
+body {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    position: relative;
+}
+
+#contact {
+    position: relative;
+    left: 45%;
+    
+}
+
+#name {
+    color: #a80f0f;
+}
+
+#number {
+    left: 7px;
+}
+
+#email {
+    left: -10px;
+}
+
+#linkedin {
+    left: -35px;
+}
+
+header > div {
+    position: relative;
+    
+}
+
+.twoColumns {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-gap: -20px;
+}
+
+.noBullets {
+    list-style-type: none;
+    position: relative;
+    left: -40px;
+}
+
+h3 {
+    position: relative;
+    color: #a80f0f;
+    top: 10px;
+    height: 20px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+
+
+
