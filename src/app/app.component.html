@@ -1,4 +1,4 @@
-<div id="header">
+<header id="header" class="mx-auto">
   <h1>Ian Beal</h1>
   <h3>Software Developer</h3>
   <p>
@@ -6,21 +6,21 @@
   <span> | </span>
     <a href="https://www.linkedin.com">LinkedIn Profile</a>
   </p>
-  <br>
-</div>
+  <hr>
+</header>
 <div id="profile">
   <h2>Profile</h2>
   <p>After discovering automation, projects I've created are still in use. 
     Creative, outside the-box solutions, with a careful look at the
     end goal, meet and exceed company needs.</p>
 </div>
-<div>
+<div id="skill" class="mx-auto">
   <h2>Skills</h2>
   <ul>
     <li *ngFor="let skill of skills">{{ skill }}</li>
   </ul>
 </div>
-<div>
+<div id="reference">
   <h2>Character References</h2>
   <ul>
     <li *ngFor="let ref of referenceView">
@@ -30,7 +30,7 @@
     </li>
   </ul>
 </div>
-<div>
+<div id="education">
   <h2>Education</h2>
   <h4>Degree</h4>
   <ul>
