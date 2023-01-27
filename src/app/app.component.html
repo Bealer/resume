@@ -1,36 +1,40 @@
-<header id="header" class="mx-auto">
-  <h1>Ian Beal</h1>
-  <h3>Software Developer</h3>
-  <p>
-    <a href="emailto:ian.b255@gmail.com">Email</a>
-  <span> | </span>
-    <a href="https://www.linkedin.com">LinkedIn Profile</a>
-  </p>
-  <hr>
-</header>
-<div id="profile">
-  <h2>Profile</h2>
-  <p>After discovering automation, projects I've created are still in use. 
-    Creative, outside the-box solutions, with a careful look at the
-    end goal, meet and exceed company needs.</p>
+<div class="mx-auto col-10 container">
+  <div id="header" class="row">
+    <h1>Ian Beal</h1>
+    <h3>Software Developer</h3>
+    <p>
+      <a href="emailto:ian.b255@gmail.com">Email</a>
+      <span> | </span>
+      <a href="https://www.linkedin.com/in/ian-beal/">LinkedIn Profile</a>
+    </p>
+    <hr>
 </div>
-<div id="skill" class="mx-auto">
-  <h2>Skills</h2>
-  <ul>
-    <li *ngFor="let skill of skills">{{ skill }}</li>
-  </ul>
+<div class="row">
+  <div id="profile" class="col-sm card">
+    <h2>Profile</h2>
+    <p>After discovering automation, projects I've created are still in use. 
+      Creative, outside the-box solutions, with a careful look at the
+      end goal, meet and exceed company needs.</p>
+    </div>
+    <div id="skill" class="col-sm card">
+      <h2>Skills</h2>
+      <ul>
+        <li *ngFor="let skill of skills">{{ skill }}</li>
+      </ul>
+    </div>
 </div>
-<div id="reference">
-  <h2>Character References</h2>
-  <ul>
-    <li *ngFor="let ref of referenceView">
-      <p>{{ ref.name }}</p>
-      <p>{{ ref.company }}</p>
-      <p>Email: {{ref.email}}</p>
-    </li>
-  </ul>
-</div>
-<div id="education">
+<div class="row">
+  <div id="reference" class="col-sm card">
+    <h2>Character References</h2>
+    <ul>
+      <li *ngFor="let ref of referenceView">
+        <p>{{ ref.name }}</p>
+        <p>{{ ref.company }}</p>
+        <p>Email: {{ref.email}}</p>
+      </li>
+    </ul>
+  </div>
+  <div id="education" class="col-sm card">
   <h2>Education</h2>
   <h4>Degree</h4>
   <ul>
@@ -46,32 +50,38 @@
     </li>
   </ul>
 </div>
-<div>
-  <h2>Career Summary</h2>
-  <ul>
-    <li *ngFor="let job of experienceView">
-      <p>{{ job.position }}</p>
-      <p>{{ job.company }} | {{ job.start.toLocaleDateString() }} 
-        to {{ job.end?.toLocaleDateString() ?? 'present' }}</p>
-      <ul>
-        <li *ngFor="let ach of job.achievments">
-          {{ ach }}
-        </li>
-      </ul>
 
-    </li>
-  </ul>
 </div>
-<div>
-  <h2>Projects</h2>
-  <ul>
-    <li *ngFor="let project of projectView">
-      <p>{{ project.name }}</p>
-      <ul>
-        <li *ngFor="let highlight of project.highlights">
-          {{ highlight }}
-        </li>
-      </ul>
-    </li>
-  </ul>
+<div class="row">
+
+  <div id="careen" class="col-sm card">
+    <h2>Career Summary</h2>
+    <ul>
+      <li *ngFor="let job of experienceView">
+        <p>{{ job.position }}</p>
+        <p>{{ job.company }} | {{ job.start.toLocaleDateString() }} 
+          to {{ job.end?.toLocaleDateString() ?? 'present' }}</p>
+          <ul>
+            <li *ngFor="let ach of job.achievments">
+              {{ ach }}
+          </li>
+        </ul>
+        
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm card">
+    <h2>Projects</h2>
+    <ul>
+      <li *ngFor="let project of projectView">
+        <p>{{ project.name }}</p>
+        <ul>
+          <li *ngFor="let highlight of project.highlights">
+            {{ highlight }}
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
 </div>
