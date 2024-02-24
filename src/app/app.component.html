@@ -10,78 +10,17 @@
     <hr>
 </div>
 <div class="row">
-  <div id="profile" class="col-sm card">
-    <h2>Profile</h2>
-    <p>After discovering automation, projects I've created are still in use. 
-      Creative, outside the-box solutions, with a careful look at the
-      end goal, meet and exceed company needs.</p>
-    </div>
-    <div id="skill" class="col-sm card">
-      <h2>Skills</h2>
-      <ul>
-        <li *ngFor="let skill of skills">{{ skill }}</li>
-      </ul>
-    </div>
+  <app-profile class="col-sm card"></app-profile>
+    <app-skills class="col-sm card"></app-skills>
 </div>
 <div class="row">
-  <div id="reference" class="col-sm card">
-    <h2>Character References</h2>
-    <ul>
-      <li *ngFor="let ref of referenceView">
-        <p>{{ ref.name }}</p>
-        <p>{{ ref.company }}</p>
-        <p>Email: {{ref.email}}</p>
-      </li>
-    </ul>
-  </div>
-  <div id="education" class="col-sm card">
-  <h2>Education</h2>
-  <h4>Degree</h4>
-  <ul>
-    <li *ngFor="let degree of degreeView">
-      <p>{{ degree.giver }}</p>
-      <p>{{ degree.diploma }}</p>
-    </li>
-  </ul>
-  <h4>Certifications</h4>
-  <ul>
-    <li *ngFor="let cert of certView">
-      <p>{{ cert.diploma }}</p>
-    </li>
-  </ul>
-</div>
+  <app-references class="col-sm card"></app-references>
+  <app-education class="col-sm card"></app-education>
 
 </div>
 <div class="row">
 
-  <div id="careen" class="col-sm card">
-    <h2>Career Summary</h2>
-    <ul>
-      <li *ngFor="let job of experienceView">
-        <p>{{ job.position }}</p>
-        <p>{{ job.company }} | {{ job.start.toLocaleDateString() }} 
-          to {{ job.end?.toLocaleDateString() ?? 'present' }}</p>
-          <ul>
-            <li *ngFor="let ach of job.achievments">
-              {{ ach }}
-          </li>
-        </ul>
-        
-      </li>
-    </ul>
-  </div>
-  <div class="col-sm card">
-    <h2>Projects</h2>
-    <ul>
-      <li *ngFor="let project of projectView">
-        <p>{{ project.name }}</p>
-        <ul>
-          <li *ngFor="let highlight of project.highlights">
-            {{ highlight }}
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+  <app-experience class="col-sm card"></app-experience>
+  <app-projects class="col-sm card"></app-projects>
 </div>
 </div>

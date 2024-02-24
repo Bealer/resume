@@ -1,0 +1,17 @@
+<div id="career" class="">
+    <h2>Career Summary</h2>
+    <ul>
+      <li *ngFor="let job of experienceView">
+        <p>{{ job.position }}</p>
+        <p>{{ job.company }} | {{ job.start.toLocaleDateString() }} 
+          to {{ job.end?.toLocaleDateString() ?? 'present' }}</p>
+          <ul>
+            <li *ngFor="let ach of job.achievments">
+              {{ ach }}
+          </li>
+        </ul>
+        
+      </li>
+    </ul>
+  </div>
+  

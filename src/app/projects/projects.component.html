@@ -1,0 +1,13 @@
+<div class="">
+    <h2>Projects</h2>
+    <ul>
+      <li *ngFor="let project of projectView">
+        <p>{{ project.name }}</p>
+        <ul>
+          <li *ngFor="let highlight of project.highlights">
+            {{ highlight }}
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>

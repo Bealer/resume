@@ -1,0 +1,16 @@
+<div id="education" class="">
+    <h2>Education</h2>
+    <h4>Degree</h4>
+    <ul>
+      <li *ngFor="let degree of degreeView">
+        <p>{{ degree.giver }}</p>
+        <p>{{ degree.diploma }}</p>
+      </li>
+    </ul>
+    <h4>Certifications</h4>
+    <ul>
+      <li *ngFor="let cert of certView">
+        <p>{{ cert.diploma }}</p>
+      </li>
+    </ul>
+  </div>
