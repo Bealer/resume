@@ -20,6 +20,6 @@ export class ReferencesComponent {
     }
   ];
 
-  
+  v2: boolean = false;
   referenceView = this.references.slice(0, 2);
 }
