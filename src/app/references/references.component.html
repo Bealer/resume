@@ -1,4 +1,4 @@
-<div id="reference" class="" [hidden]="v2">
+<div id="reference" class="" *ngIf="!v2">
     <h2>Character References</h2>
     <ul>
       <li *ngFor="let ref of referenceView">
@@ -8,13 +8,13 @@
       </li>
     </ul>
   </div>
-  <div id="reference" class="" [hidden]="!v2">
+  <div id="referencev2" class="" *ngIf="v2">
     <h2>Character References</h2>
     <ul>
       <li *ngFor="let ref of referenceView">
         <p>{{ ref.name }}</p>
         <p>{{ ref.company }}</p>
-        <p>Email: {{ref.email}}</p>
+        <p>Email: <a href="{{'emailto:' + ref.email}}">{{ref.email}}</a></p>
       </li>
     </ul>
   </div>
