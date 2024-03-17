@@ -1,10 +1,20 @@
-<div id="reference" class="">
+<div id="reference" class="card p-3" *ngIf="!v2">
     <h2>Character References</h2>
     <ul>
       <li *ngFor="let ref of referenceView">
         <p>{{ ref.name }}</p>
         <p>{{ ref.company }}</p>
         <p>Email: {{ref.email}}</p>
+      </li>
+    </ul>
+  </div>
+  <div id="referencev2" class="card p-3" *ngIf="v2">
+    <h2>Character References</h2>
+    <ul>
+      <li *ngFor="let ref of referenceView">
+        <p>{{ ref.name }}</p>
+        <p>{{ ref.company }}</p>
+        <p>Email: <a href="{{'emailto:' + ref.email}}">{{ref.email}}</a></p>
       </li>
     </ul>
   </div>

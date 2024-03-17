@@ -1,26 +1,20 @@
-<div class="mx-auto col-10 container">
+<div class="mx-auto col-10 container px-40">
   <div id="header" class="row">
-    <h1>Ian Beal</h1>
-    <h3>Software Developer</h3>
+    <h1 class="text-4xl font-medium">Ian Beal</h1>
+    <h3 class="text-xl">Software Developer</h3>
     <p>
-      <a href="emailto:ian.b255@gmail.com">Email</a>
+      <a href="emailto:ian.b255@gmail.com">ian.b255@gmail.com</a>
       <span> | </span>
-      <a href="https://www.linkedin.com/in/ian-beal/">LinkedIn Profile</a>
+      <a href="https://www.linkedin.com/in/ian-beal/">LinkedIn</a>
     </p>
     <hr>
 </div>
-<div class="row">
-  <app-profile class="col-sm card"></app-profile>
-    <app-skills class="col-sm card"></app-skills>
-</div>
-<div class="row">
-  <app-references class="col-sm card"></app-references>
-  <app-education class="col-sm card"></app-education>
-
-</div>
-<div class="row">
-
-  <app-experience class="col-sm card"></app-experience>
-  <app-projects class="col-sm card"></app-projects>
-</div>
+<div class="flex flex-wrap flex-auto w-full h-full">
+  <app-profile></app-profile>
+    <app-skills></app-skills>
+    <app-references></app-references>
+    <app-education></app-education>
+    <app-experience></app-experience>
+    <app-projects></app-projects>
+    </div>
 </div>
